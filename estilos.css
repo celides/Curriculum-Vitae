@@ -1,0 +1,850 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 90px 0;
+}
+
+.header {
+    height: 100vh;
+    background-image: url(./img/tecnologia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.head {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+.hamburguer {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+/* Estilos para pantallas más pequeñas (responsive) */
+@media (max-width: 768px) {
+    .menu-navegacion {
+        width: 100%;
+        /* Ocupará el 100% del ancho de la pantalla */
+        transform: translateX(0);
+        /* Mostrará el menú en pantallas más pequeñas */
+        background: rgba(0, 0, 0, 0.8);
+        /* Fondo semitransparente */
+        padding: 20px 0;
+        /* Añade espacio en la parte superior e inferior del menú */
+        flex-direction: column;
+        /* Cambia la dirección de los elementos a vertical */
+        align-items: center;
+        /* Centra los elementos verticalmente */
+    }
+
+    .menu-button {
+        padding: 10px 20px;
+        /* Redefine el espaciado de los botones para pantallas más pequeñas */
+        margin: 10px 0;
+        /* Añade espacio entre los botones */
+    }
+
+    .menu-navegacion.active {
+        transform: translateX(0);
+        /* Muestra el menú cuando se activa (por ejemplo, con un botón de hamburguesa) */
+    }
+
+    .hamburguer {
+        display: block;
+        /* Muestra el botón de hamburguesa en pantallas más pequeñas */
+    }
+}
+
+
+.barra-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Fondo transparente con opacidad */
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    z-index: 2;
+    /* Asegura que la barra esté por delante de la imagen de fondo */
+}
+
+.menu-button {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-button:hover {
+    background-color: #2196F3;
+    color: #00ff00;
+}
+
+/* Circulo perfil y sol_____________________________________________________________________________________________________ */
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border: 5px solid #0099cc;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+
+.profile {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* _____________________________________________________________________________________________________ */
+
+.elemento-en-la-esquina {
+
+    /* Puedes ajustar el tamaño, margen y otros estilos según tus preferencias */
+    
+    min-width: 200px;
+    /* Establece un ancho mínimo */
+    min-height: 8%;
+    /* Establece una altura mínima */
+/* _____________________________________________________________________________________________________ */
+
+    height: 200px;
+
+    /* _altura del texto____________________________________________________________________________________________________ */
+
+    background-color: transparent;
+    /* Color de fondo */
+    color: #fff;
+    /* Color del texto */
+    text-align: center;
+    line-height: 100px;
+    border-radius: 5px;
+    /* Otros estilos según tu diseño */
+}
+
+/* COLOR DE INKS_________________________________________________________________________________________  */
+/* Estilo para el texto dentro del elemento con la clase "n-service" y color #00ff00 */
+
+.n-service a {
+    color: #00ff00;
+}
+
+/* Cambia el color del texto del enlace específico */
+a[href="https://www.mediafire.com/file/rqxgb7iu8uttztk/CURRICULUM_VITE_programacion.pdf/file"] {
+    color: #00ff00 !important; /* Cambia el color a tu preferencia */
+}
+
+/* Otros estilos... */
+
+a[href="https://universidaddelasartes.edu.mx/"],
+a[href="https://www.fundaciondevalores.org/"] {
+    color: #00ff00;
+}
+
+/* Otros estilos... */
+
+a[href="https://airbnb-lemon-two.vercel.app/"],
+a[href="https://funval-juan-carlos-dev-challenges.vercel.app/"],
+a[href="https://windbnb-funval-git-main-celides.vercel.app/"] {
+    color: #00ff00;
+}
+/* Otros estilos... */
+
+a[href="https://universidad-de-programacion.000webhostapp.com/login.php"] {
+    color: #00ff00;
+}
+
+    .hamburguer {
+        background-color: rgba(0, 255, 0, 0.5); /* Cambia este valor al color y opacidad deseados */
+    }
+    
+/* COLOR DE LINKS_________________________________________________________________________________________  */
+
+.profile {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border: 8px solid #0099cc;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilos para el contenedor de texto */
+.contenedor {
+    text-align: end;
+    margin-bottom: 200px;
+    /* Ajusta la separación entre el círculo y el texto */
+   
+}
+
+.titulo {
+    font-size: 24px;
+    margin-top: 10px;
+    /* Ajusta el margen superior del título */
+}
+
+
+
+
+/* Circulo perfil _____________________________________________________________________________________________________ */
+
+
+.profile {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border: 8px solid #0099cc;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Circulo perfil _____________________________________________________________________________________________________ */
+
+
+
+
+
+.menu-navegacion a:hover {
+    font-size: 1.1em;
+    /* Aumenta el tamaño del texto al pasar el cursor */
+    color: #00ff00;
+    /* Cambia el color al pasar el cursor */
+    background-color: green;
+    /* Cambia "green" al color de verde que prefieras */
+}
+
+
+.menu-navegacion {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    width: 30vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    right: 0;
+    transform: translateX(110%);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.switch-label {
+    position: relative;
+    top: 20px;
+    /* Ajusta la posición vertical según sea necesario */
+    right: 90px;
+    /* Ajusta la posición horizontal según sea necesario */
+    left: 28px;
+}
+
+/* Estilos para el botón de conmutación (Toggle Switch) fuera del menú */
+.switch {
+    position: relative;
+    /* Fijo para que permanezca en su lugar */
+    top: 30px;
+    /* Ajusta la posición vertical según sea necesario */
+    right: 90px;
+    /* Ajusta la posición horizontal según sea necesario */
+    left: 28px;
+}
+
+/* Otros estilos de tu botón y menú... */
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Termina boton modo obscuro */
+
+/* texto h1 y p */
+.contenedor head con-fondo elemento-en-la-esquina {
+    justify-content: flex-start;
+
+
+}
+
+
+.titulo {
+    display: inline-block;
+    font-size: 104px;
+    transition: color 0.3s;
+    /* Transición suave para el color del texto */
+    text-align: right;
+    /* Permite el posicionamiento relativo */
+    color: #00fff6;
+
+
+}
+
+.titulo:hover {
+    color: #ffcc00;
+    /* Cambia el color del título a negro al pasar el cursor */
+
+}
+
+.copy {
+    display: inline-block;
+    font-size: 88px;
+    text-align: right;
+    /* Permite el posicionamiento relativo */
+    color: #00fff6;
+    /* Color azul fluorescente */
+    transition: font-size 0.3s, color 0.3s;
+}
+
+.copy::before {
+    content: "";
+    position: absolute;
+    bottom: 55;
+    left: 0;
+    right: 0;
+    /* Hace que la barra ocupe todo el ancho */
+
+    width: 0;
+    /* Inicialmente, la barra está vacía */
+    height: 4px;
+    /* Altura de la barra */
+    background-color: #00ff00;
+    /* Color de la barra fluorescente */
+    transition: width 0.4s;
+    /* Transición para animar el relleno de la barra */
+}
+
+.copy:hover {
+    font-size: 30px;
+    /* Tamaño de fuente aumentado al realizar un hover */
+    color: #00ff00;
+    /* Cambia el color del texto a negro al pasar el cursor */
+
+}
+
+.copy:hover::before {
+    width: 100%;
+    /* Rellena completamente la barra al pasar el cursor */
+}
+
+.titulo {
+    display: inline-block;
+    font-size: 24px;
+    transition: color 0.3s;
+    /* Transición suave para el color del texto */
+}
+
+.titulo:hover {
+    color: #00ff00;
+    /* Cambia el color al pasar el cursor */
+}
+
+
+.con-fondo {
+
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    /* Color del texto en el fondo */
+    /* Otros estilos para la sección con fondo... */
+}
+
+
+
+    .hamburguesa-menu {
+        display: block;
+        /* Mostrar el menú hamburguesa en pantallas más pequeñas */
+        cursor: pointer;
+    }
+
+    .barra {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px 0;
+    }
+
+/* Más estilos y estilos anteriores para pantallas más grandes */
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 2px;
+    bottom: 2px;
+    background-color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #011c33;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+/* ____________________________________________________________________________________________________________________ */
+/* Estilos para el interlineado y justificación */
+
+
+.contenedor-servicio p {
+    line-height: 1.5; /* Ajusta el valor según tu preferencia para el interlineado */
+    text-align: justify; /* Esto justificará el texto */
+    
+  }
+  
+  
+/* ___________________________________________________________________________________________________________________ */
+
+.spread {
+    transform: translateX(0);
+}
+
+.menu-navegacion a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.titulo {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.copy {
+    font-weight: 300;
+    font-size: 25px;
+}
+
+/* Services */
+
+.subtitulo {
+    color: #00ff00;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.contenedor-servicio {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-servicio img {
+    width: 40%;
+}
+
+.checklist-servicio {
+    width: 45%;
+}
+
+.service {
+    margin-bottom: 20px;
+}
+
+.n-service {
+    margin-bottom: 7px;
+    color: #00ff00;
+}
+
+
+
+.number {
+    display: inline-block;
+    /* 02 */
+    background-image: linear-gradient(to top, #012105 0%, #00ff00 100%);
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    font-weight: 700;
+}
+/* COLOR DEL CONTENEDOR DE LA GALERIA________________________________________________________ */
+.gallery {
+    background: #012105;
+}
+/* GALERIA DE IMANES_______________________________________________________________________________________ */
+.contenedor-galeria {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.imagen-link {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px; /* Ajusta el margen entre las imágenes */
+}
+
+.img-galeria {
+    width: 100%;
+    max-width: 300px; /* Limita el ancho máximo de la imagen */
+    display: block;
+    transition: transform 0.3s, box-shadow 0.3s;
+    transform-origin: center center;
+    object-fit: cover; /* Ajusta el tamaño de la imagen manteniendo la proporción */
+    box-shadow: 0 0 6px rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.img-galeria:hover {
+    transform: scale(2.5); /* Ajusta el factor de escala al hacer hover */
+    /* box-shadow: 0 0 10px rgb(255, 255, 255); */
+}
+
+.imagen-nombre {
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+}
+
+/* texto de las imagenes da click aqui ______________________________________________________________________________________ */
+
+.services contenedor {
+    background-color: #fff;
+}
+
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.experts {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cont-expert {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cont-expert img {
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+.n-expert {
+    width: 100%;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+/* Footer_______________________________________________________________________________________ */
+
+
+footer {
+    background: #012105;
+    padding-bottom: 0.1px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+
+.contact-us {
+    width: 40%;
+    color: #fff;
+}
+
+.brand {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.brand+p {
+    font-weight: 500;
+}
+
+.social-media {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-icon {
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.social-media-icon i {
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.line {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+
+.social-media-icon:hover {
+    background: #00ff00;
+    color: #012105;
+}
+
+@media screen and (max-width: 800px) {
+    .menu-navegacion {
+        width: 50vw;
+    }
+
+    .titulo {
+        font-size: 40px;
+    }
+
+    .contenedor-servicio img {
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .checklist-servicio {
+        width: 80%;
+    }
+
+    .service {
+        margin-bottom: 30px;
+    }
+
+    .img-galeria {
+        width: 45%;
+    }
+
+    .agregarImagen {
+        width: 80%;
+    }
+
+
+    .cont-expert {
+        width: 80%;
+    }
+
+    .footer-content {
+        justify-content: center;
+    }
+
+    .social-media {
+        width: 80%;
+        justify-content: space-evenly;
+    }
+
+    .social-media-icon {
+        margin-left: 0;
+    }
+
+    .contact-us {
+        text-align: center;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+    .menu-navegacion {
+        width: 65vw;
+    }
+
+    .hamburguer {
+        top: 20px;
+        right: 20px;
+    }
+
+    .titulo {
+        font-size: 30px;
+    }
+
+    .subtitulo {
+        font-size: 30px;
+    }
+
+    .img-galeria {
+        width: 95%;
+    }
+
+    .agregar-imagen {
+        width: 90%;
+    }
+
+    .social-media {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .social-media-icon {
+        margin-left: 0;
+    }
+
+    .contact-us {
+        text-align: center;
+        width: 95%;
+        margin-bottom: 40px;
+    }
+
+}
+/* contador_____________________________________________ */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    margin: 50px auto;
+    position: relative;
+}
+
+h1 {
+    color: #333;
+}
+
+#contador-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#contador {
+    display: inline-block;
+    font-size: 2em; /* Tamaño de fuente ajustado para el contador */
+    color: #2ecc71; /* Cambia el color del contador según tus preferencias */
+    margin: 10px;
+}
+
+
+
+
+
+

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Carlos Pérez Martínez</title>
+
+    <script src="js/script.js"></script>
+
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="./img/perfil_circular_juan_carlos.ico" type="image/x-icon">
+
+
+
+    <style>
+        /* Estilos específicos para el modo oscuro */
+          /* Estilos específicos para el modo oscuro */
+          body.dark-mode {
+            background-color: #f6f6f6; /* Fondo principal oscuro */
+            color: #000000; /* Texto blanco en modo oscuro */
+        }
+
+        body {
+            background-color: #000000; /* Fondo principal oscuro */
+            color: #ffffff; /* Texto blanco en modo oscuro */
+            transition: background-color 0.3s ease;
+        }
+
+ /* FONDO DE MENU HAMBURGESA__________________________________________________________________________________________ */
+        .menu-navegacion {
+            display: flex;
+            justify-content: space-around;
+            background-color: #012105;
+            /* Cambia "green" al color de verde que prefieras */
+        }
+
+        .dark-mode-button {
+            color: #000000;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<!-- ________________________________________________________________________________________________________________________________ -->
+
+<script>
+    const colorSwitch = document.querySelector('#switch input[type="checkbox"]');
+    function cambiaTema(ev) {
+        if (ev.target.checked) {
+            document.documentElement.setAttribute('tema', 'light');
+        } else {
+             document.documentElement.setAttribute('tema', 'dark');
+        }
+    }
+    colorSwitch.addEventListener('change', cambiaTema);
+</script>
+
+<!-- ________________________________________________________________________________________________________________________________ -->
+
+<body>
+
+    <header class="header" id="inicio">
+        <img class="hamburguer" src="img/hamburguesa.svg" alt="">
+
+        <nav class="menu-navegacion">
+            <a href="#inicio" class="menu-button">Inicio</a>
+            <a href="#servicio" class="menu-button">Curriculum Vite</a>
+            <a href="#galeria" class="menu-button">Proyectos Destacados</a>
+            <a href="#expertos" class="menu-button">Habilidades Técnicas</a>
+            <a href="#footer" class="menu-button">Contacto</a>
+        </nav>
+        <!-- __________________________________________________________________________________________________________________ -->
+
+        <label class="switch-label" for="toggleDarkMode">Modo Claro</label><br>
+        <label class="switch">
+            <input type="checkbox" id="toggleDarkMode" onclick="toggleDarkMode()">
+            <span class="slider round"></span>
+        </label>
+
+        <!-- __________________________________________________________________________________________________________________ -->
+
+
+        <body>
+
+            <div class="profile">
+                <img src="./img/Juan_Carlos_Perez_Martinez.jpg" alt="Tu Fotografía de Perfil">
+            </div>
+
+        </body>
+        <!-- __________________________________________________________________________________________________________________ -->
+
+        <div class="contenedor head con-fondo elemento-en-la-esquina">
+            <h1 class="titulo">Juan Carlos</h1>
+            <p class="copy">Pérez Martínez</p>
+        </div>
+
+        <!-- ________________________________________________________________________________________________________________________________ -->
+
+
+        </section>
+
+    </header>
+    <!-- _____________________________________________________ -->
+    <main>
+        <section class="services contenedor" id="servicio">
+            <h2 class="subtitulo">Curriculum Vite</h2>
+            <p> "Programador junior Full Stack con una sólida formación adquirida en la Academia Internacional Funval
+                durante su Boot Camp. Apasionado por la tecnología y el desarrollo web, cuento con habilidades tanto en
+                el ámbito del Front-end como del Back-end. Mi compromiso se centra en la resolución de problemas y el
+                trabajo en equipo, con el objetivo de contribuir al éxito de los proyectos en los que participo."</p>
+            <br>   <br>
+            <div class="contenedor-servicio">
+                <img src="img/checklist.svg" alt="">
+                <div class="checklist-servicio">
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">1</span>Educación</h3><br>
+                        <p> Lic. Artes Visuales.<br> <a href="https://universidaddelasartes.edu.mx/" target="_blank">
+                                Universidad de las Artes</a><br><br>
+                            Programación Fullstack<br> <a href="https://www.fundaciondevalores.org/" target="_blank">
+                                Academia Internacional Funval</a>,<br> Bootcamp [2023]
+                        </p>
+                        <br>   <br>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">2</span>Lenguajes de Programación</h3><br>
+
+                        <img src="./img/lenguajes de programacion.jpg" alt="lenguajes de programacion"
+                            style="width: 300%; height: auto; max-width: 100%;">
+                    </div>
+                    <br>   <br>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">3</span>Habilidades full stack</h3><br>
+                        <p> Colaboré activamente en el desarrollo de aplicaciones web, aplicando tecnologías
+                            fundamentales como HTML, CSS y JavaScript. Además, trabajé con bibliotecas y frameworks
+                            populares como React y Next.js para crear experiencias web dinámicas y altamente
+                            interactivas.</p>
+                    </div>
+                    <br>   <br>
+                    <a href="https://www.mediafire.com/file/rqxgb7iu8uttztk/CURRICULUM_VITE_programacion.pdf/file"
+                    target="_blank" download>Descargar mi currículum</a>
+                 
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- _Galeria de imaGenes_________________________________________________________________________________________________________________ -->
+
+        <section class="gallery" id="galeria">
+            <div class="contenedor">
+                <h2 class="subtitulo">Proyectos Destacados</h2>
+                <div class="contenedor-galeria">
+        
+                    <a href="https://airbnb-lemon-two.vercel.app/" target="_blank" class="imagen-link">
+                        <img src="./img/Windbnb.jpg" class="img-galeria" alt="Windbnb">
+                        <div class="imagen-nombre">Windbnb</div>
+                    </a>
+        
+                    <a href="https://funval-juan-carlos-dev-challenges.vercel.app/" target="The-Weather-Channel" class="imagen-link">
+                        <img src="./img/The Weather Channel.jpg" class="img-galeria" alt="The Weather Channel.jpg">
+                        <div class="imagen-nombre">The-Weather-Channel</div>
+                    </a>
+        
+                    <a href="https://windbnb-funval-git-main-celides.vercel.app/" target="Windbnb II" class="imagen-link">
+                        <img src="./img/Windbnb II.jpg" class="img-galeria" alt="Windbnb II">
+                        <div class="imagen-nombre">Windbnb II</div>
+                    </a>
+        
+                    <a href="https://universidad-de-programacion.000webhostapp.com/login.php" target="Plataforma_Universitaria_Online" class="imagen-link">
+                        <img src="./img/Plataforma Universitaria Online.jpg" class="img-galeria" alt="Plataforma Universitaria Online">
+                        <div class="imagen-nombre">Plataforma Universitaria Online</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+          
+        <!-- Galeria de imaGenes__________________________________________________________________________________________________________________ -->
+
+
+        
+        <section class="contenedor" id="expertos">
+            <h2 class="subtitulo">Habilidades Técnicas</h2>
+            <br>
+
+            <section class="experts">
+                <div class="cont-expert">
+                    <img src="img/pie_chart.svg" alt="">
+                    <h3 class="n-expert">Analytics</h3>
+                </div>
+                <div class="cont-expert">
+                    <img src="img/search_engine.svg" alt="">
+                    <h3 class="n-expert">SEO</h3>
+                </div>
+                <div class="cont-expert">
+                    <img src="img/security.svg" alt="">
+                    <h3 class="n-expert">Security</h3>
+                </div>
+            </section>
+        </section>
+    </main>
+    
+<!-- __________________________________________________________________________________________________________________ -->
+
+    <footer id="footer">
+        <div class="contenedor footer-content">
+            <div class="contact-us">
+                <h2 class="brand">Juan Carlos Pérez Mtz</h2>
+                <p>Programador Junior Fullstack</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/juancarlos.perezmartinez.792?locale=es_LA" class="social-media-icon" target="_blank">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UClj_YDnrBmAOLirho9sX0WA" class="social-media-icon" target="_blank">
+                    <i class='bx bxl-youtube'></i>
+                </a>
+                <a href="https://github.com/celides" class="social-media-icon" target="_blank">
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a href="https://www.linkedin.com/in/juan-carlos-p%C3%A9rez-mart%C3%ADnez-78886a156/" class="social-media-icon" target="_blank">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+            </div>
+            
+        </div>
+        <div class="container">
+           
+            <!-- Contenedor adicional para el contador -->
+            <div id="contador-container">
+                <div id="contador">12</div>
+            </div>
+        </div>
+        
+        <div class="line"></div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script>
+        // JavaScript para activar/desactivar el modo oscuro
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle('dark-mode'); // Agrega o quita la clase 'dark-mode' en el body
+        }
+        
+    </script>
+</body>
+
+</html>
